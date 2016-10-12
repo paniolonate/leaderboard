@@ -1,0 +1,18 @@
+<!-- http://courses.ics.hawaii.edu/ics314f16/morea/meteor-1/inclass-meteor-leaderboard.html -->
+<head>
+  <title>Leaderboard</title>
+</head>
+<body>
+<h1>Leaderboard</h1>
+
+{{> leaderboard}}
+</body>
+
+<template name="leaderboard">
+  <ul>
+    {{#each player}}
+      <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
+    {{/each}}
+  </ul>
+  <!--{{otherHelperFunction}}-->
+</template>
