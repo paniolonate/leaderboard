@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c99f11a4-fb6c-4a99-a428-854446063a23" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/leaderboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/leaderboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/leaderboard.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/client/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/client/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/client/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/server/main.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.meteor/packages" afterPath="$PROJECT_DIR$/app/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.meteor/versions" afterPath="$PROJECT_DIR$/app/.meteor/versions" />
-    </list>
+    <list default="true" id="c99f11a4-fb6c-4a99-a428-854446063a23" name="Default" comment="" />
     <ignored path="leaderboard.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -306,7 +294,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="3" width="1266" height="543" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2073955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
