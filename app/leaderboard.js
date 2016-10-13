@@ -8,11 +8,11 @@ console.log("Hello World");
 
 //Runs on browser
 if(Meteor.isClient){
-  console.log("Hello client");
+
   //Helper functions can be defined here
   Template.leaderboard.helpers({
     'player': function(){
-      return PlayersList.find();
+      return PlayersList.find({}, { sort: {score: -1, name : 1}}); // -1 to sort in descending order
     },
     'selectedClass': function(){
       var playerId = this._id;
@@ -20,6 +20,11 @@ if(Meteor.isClient){
       if(playerId == selectedPlayer) {
         return "selected";
       }
+    },
+
+    'selectedPlayer': function(){
+      var selectedPlayer = Session.get('selectedPlayer');
+      return PlayersList.findOne({ _id: selectedPlayer });
     }
   });
 
@@ -29,7 +34,16 @@ if(Meteor.isClient){
       //Before using session had to add it in cmd line via 'meteor add session'
       var playerId = this._id;
       Session.set('selectedPlayer', playerId);
+    },
 
+    'click .increment': function(){
+      var selectedPlayer = Session.get('selectedPlayer');
+      PlayersList.update({ _id: selectedPlayer }, { $inc: {score: 5 } });
+    },
+
+    'click .decrement': function(){
+      var selectedPlayer = Session.get('selectedPlayer');
+      PlayersList.update({ _id: selectedPlayer }, { $inc: {score: -5 } });
     }
   });
 }

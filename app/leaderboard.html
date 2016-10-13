@@ -13,6 +13,13 @@
     {{#each player}}
       <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
     {{/each}}
+    <li>Selected Player: {{selectedPlayer.name}}</li>
+    {{#if selectedPlayer}}
+    <li>
+       <button class="increment">Give 5 Points</button>
+       <button class="decrement">Take 5 Points</button>
+    </li>
+    {{/if}}
   </ul>
   <!--{{otherHelperFunction}}-->
 </template>
